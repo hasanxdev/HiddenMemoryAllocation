@@ -39,7 +39,7 @@ public class Slide95Benchmark
         {
             var arr2 = pool.Rent(1000);
             Array.Fill(arr2, 888);
-            ArrayPool<long>.Shared.Return(arr2);
+            pool.Return(arr2);
         });
     }
 }
